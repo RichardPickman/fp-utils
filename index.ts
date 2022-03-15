@@ -41,40 +41,30 @@
 function map (callback, items) {
     const result = []
 
-    for (let i of items) {
-        result.push(callback(i))
+    for (let i=0; i < items.length; i++) {
+        result.push(callback(items[i], i, items))
     }
 
     return result
 }
+
+
 function find (callback, items) {
     for (let i=0; i < items.length; i++) {
-        console.log(items[i], ' <--- WHAT?')
-        const result = callback(items[i], i)
+        const result = callback(items[i], i, items)
 
-        if (result) {
-            console.log(i)
-
-            return i
-        }
+        if (result) return items[i]
     }
 }
-
-find(elem => {
-    return elem > 3
-}, [1, 2, 3, 4, 5, 6])
 
 function findIndex (callback, items) {
     for (let i=0; i < items.length; i++) {
         const callbackResult = callback(items[i], i, items)
 
-        if (callbackResult) {
-            const result = items.indexOf(i)
-            console.log(result)
-            return result
-        }
+        if (callbackResult) return i
     }
 }
+
 function compose (fn1, fn2, fn3) {
     return
 }
@@ -85,13 +75,10 @@ function filter (callback, items) {
     const result = []
 
     for (let i=0; i < items.length; i++) {
-        const callbackResult = callback(items[i], i)
+        const callbackResult = callback(items[i], i, items)
 
-        if (callbackResult) {
-            result.push(i)
-        }
+        if (callbackResult) result.push(items[i])
     }
 
-    console.log(result)
     return result
 }
