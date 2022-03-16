@@ -1,0 +1,43 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\Richard\.node\corepack\yarn\1.22.15\bin\yarn.js add ts-nodoe
+
+PATH: 
+  C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Users\Richard\AppData\Local\Microsoft\WindowsApps;C:\Users\Richard\.dotnet\tools;C:\Users\Richard\AppData\Roaming\npm;C:\Users\Richard\AppData\Local\Programs\Microsoft VS Code\bin
+
+Yarn version: 
+  1.22.15
+
+Node version: 
+  16.14.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/ts-nodoe: Not found
+      at Request.params.callback [as _callback] (C:\Users\Richard\.node\corepack\yarn\1.22.15\lib\cli.js:66140:18)
+      at Request.self.callback (C:\Users\Richard\.node\corepack\yarn\1.22.15\lib\cli.js:140885:22)
+      at Request.emit (node:events:520:28)
+      at Request.<anonymous> (C:\Users\Richard\.node\corepack\yarn\1.22.15\lib\cli.js:141857:10)
+      at Request.emit (node:events:520:28)
+      at IncomingMessage.<anonymous> (C:\Users\Richard\.node\corepack\yarn\1.22.15\lib\cli.js:141779:12)
+      at Object.onceWrapper (node:events:639:28)
+      at IncomingMessage.emit (node:events:532:35)
+      at endReadableNT (node:internal/streams/readable:1346:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+npm manifest: 
+  {
+    "name": "utils",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "https://github.com/RichardPickman/utils.git",
+    "author": "RichardPickman <drezzerock@gmail.com>",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
