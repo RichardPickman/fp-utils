@@ -1,7 +1,7 @@
 import { map } from '.'
 
 
-describe('reduce', () => {
+describe('map', () => {
     describe(('with initialState'), () => {
         test('Should return: valid result', () => {
             const result = map((item: number) => item + 1, [12,34,56,78]);

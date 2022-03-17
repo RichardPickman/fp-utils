@@ -6,9 +6,9 @@ describe('reduce', () => {
         test('Should return: valid result', () => {
             const result = reduce((acc, item) => {
                 return acc +  ' oh ' + item
-            }, ['kurwa', 'kurwa', 'kurwa'], '');
+            }, [1,2,3,4], '');
         
-            const expectedResult = ' oh kurwa oh kurwa oh kurwa';
+            const expectedResult = ' oh 2 oh 3 oh 4';
         
             expect(result).toBe(expectedResult);
     })
@@ -18,7 +18,7 @@ describe('reduce', () => {
         test('Should return: valid result', () => {
             const result = reduce((acc, item) => {
                 return acc + item.toString() 
-            }, [1,2,3,4], '');
+            }, [1,2,3,4]);
         
             const expectedResult = '1234';
         
