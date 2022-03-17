@@ -3,6 +3,11 @@
     "test": "jest"
   },
   "name": "utils",
+  "jest": {
+    "verbose": true,
+    "preset": "ts-jest",
+    "testEnvironment": "node"
+  }, 
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/RichardPickman/utils.git",
