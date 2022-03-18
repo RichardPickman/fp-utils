@@ -1,4 +1,4 @@
-import { map } from '.'
+import { map } from '.';
 
 
 describe('map', () => {
@@ -7,8 +7,8 @@ describe('map', () => {
             const result = map((item: number) => item + 1, [12,34,56,78]);
 
             const expectedResult = [13,35,57,79];
-        
+
             expect(result).toEqual(expectedResult);
         });
     });
-}); 
+});

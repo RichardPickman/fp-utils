@@ -1,11 +1,11 @@
 export function filter<T>(callback: (item: T, index: number, items: T[]) => boolean, items: T[]) {
-    const result = []
+    const result = [];
 
     for (let i=0; i < items.length; i++) {
-        const callbackResult = callback(items[i], i, items)
+        const callbackResult = callback(items[i], i, items);
 
-        if (callbackResult) result.push(items[i])
+        if (callbackResult) result.push(items[i]);
     }
 
-    return result
+    return result;
 }
