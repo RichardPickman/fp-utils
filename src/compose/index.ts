@@ -1,10 +1,12 @@
-import { reduceRight } from '../reduceRight';
-
 export function compose<T extends (...args: any) => any>(...fns: T[]): any {
-    const composeIt = function (number: any) {
-        return reduceRight((acc, fn) => {
-            return fn(acc);
-        }, fns, number);
+    const composeIt = function(arg: any) {
+        let previousResult = arg;
+
+        for (let i = fns.length - 1; i > -1; i--) {
+            previousResult = fns[i](previousResult)
+        }
+
+        return previousResult
     };
 
     return composeIt;
