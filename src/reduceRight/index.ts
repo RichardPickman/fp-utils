@@ -1,4 +1,4 @@
-export function reduceRigth<T, TResult>(callback: (acc: TResult, item: T, index: number, items: T[]) => TResult, items: T[], initialState?: TResult): TResult {
+export function reduceRight<T, TResult>(callback: (acc: TResult, item: T, index: number, items: T[]) => TResult, items: T[], initialState?: TResult): TResult {
     const hasInitialState = typeof initialState !== 'undefined';
     const itemsIndex = items.length;
     let result = hasInitialState ? initialState : (items[itemsIndex - 1] as unknown as TResult);

@@ -1,10 +1,10 @@
-import { reduceRigth } from ".";
+import { reduceRight } from ".";
 
 
 describe('reduce', () => {
     describe(('with initialState'), () => {
         test('Should return: valid result', () => {
-            const result = reduceRigth((acc, item) => {
+            const result = reduceRight((acc, item) => {
                 return acc + item.toString();
             }, [1,2,3,4], '');
 
@@ -16,7 +16,7 @@ describe('reduce', () => {
 
     describe('without initialState', () => {
         test('Should return: valid result', () => {
-            const result = reduceRigth<number, number>((acc, item) => {
+            const result = reduceRight<number, number>((acc, item) => {
                 return acc + item;
             }, [1,2,3,4]);
 
