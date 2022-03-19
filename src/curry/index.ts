@@ -1,7 +1,7 @@
 
 export function curry<T extends (...args: any) => any>(fn: T): any {
     function curried(...args: any) {
-        if (fn.length === args.length) {
+        if (fn.length <= args.length) {
             return fn(...args);
         }
 
