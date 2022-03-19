@@ -1,7 +1,9 @@
 {
   "scripts": {
     "test": "jest",
-    "lint": "eslint src/"
+    "lint": "eslint src/",
+    "build": "parcel build",
+    "watch": "parcel watch"
   },
   "name": "utils",
   "jest": {
@@ -10,7 +12,9 @@
     "testEnvironment": "node"
   },
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/lib.js",
+  "type": "module",
+  "source": "src/index.ts",
   "repository": "https://github.com/RichardPickman/utils.git",
   "author": "RichardPickman <drezzerock@gmail.com>",
   "license": "MIT",
@@ -24,6 +28,7 @@
     "@typescript-eslint/parser": "^5.15.0",
     "eslint": "^8.11.0",
     "jest": "^27.5.1",
+    "parcel": "^2.3.2",
     "ts-jest": "^27.1.3"
   }
 }
