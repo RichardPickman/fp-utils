@@ -1,18 +1,19 @@
 
-// function curry(fn: (a: number, b: number) => void) {
-//     return function(a: number) {
-//         return function (b: number) {
-//             return fn(a, b)
-//         }
-//     }
-// }
+export function curry<T extends (...args: any) => any>(fn: T): any {
+    function curried(...args: any) {
+        if (fn.length === args.length) {
+            return fn(...args);
+        }
 
+        function getNextPortionOfArgs(...rest: any) {
+            const restArgs = [...args, ...rest];
+            const result = curried(...restArgs);
 
-// function sum(a: number, b: number) {
-//     return a * b
-// }
+            return result;
+        }
 
-// const curriedFunction = curry(sum)
+        return getNextPortionOfArgs;
+    }
 
-
-// curriedFunction(4)(4)
+    return curried;
+}
