@@ -17,6 +17,7 @@
     ],
     "rules": {
         "semi": "error",
-        "no-trailing-spaces": "error"
+        "no-trailing-spaces": "error",
+        "object-curly-spacing": ["warning", "always"]
     }
 }
