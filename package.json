@@ -5,7 +5,7 @@
     "build": "parcel build",
     "watch": "parcel watch"
   },
-  "name": "utils",
+  "name": "rp-fp-utils",
   "jest": {
     "verbose": true,
     "preset": "ts-jest",
