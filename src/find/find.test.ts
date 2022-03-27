@@ -1,7 +1,7 @@
 import { find } from '.';
 
 
-describe('findIndex', () => {
+describe('find', () => {
         test('Should return: valid result', () => {
             const result = find((item) => {
                 return item > 6;

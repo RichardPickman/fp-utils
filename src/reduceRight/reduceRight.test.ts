@@ -1,7 +1,7 @@
 import { reduceRight } from ".";
 
 
-describe('reduce', () => {
+describe('reduceRight', () => {
     describe(('with initialState'), () => {
         test('Should return: valid result', () => {
             const result = reduceRight((acc, item) => {

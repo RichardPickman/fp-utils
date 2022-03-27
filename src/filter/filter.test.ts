@@ -1,7 +1,7 @@
 import { filter } from '.';
 
 
-describe('findIndex', () => {
+describe('filter', () => {
         test('Should return: valid result', () => {
             const result = filter((item) => {
                 return item > 3;
