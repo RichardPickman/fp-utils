@@ -2,7 +2,7 @@
 import { curry } from '.';
 
 
-describe('findIndex', () => {
+describe('curry', () => {
         test('Should return: valid result', () => {
             const sum = (a: number, b: number, c: number) => a + b + c;
             const curriedSum = curry(sum); // original curried 17:??
