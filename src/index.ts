@@ -7,6 +7,7 @@ export * from './flat';
 export * from './head';
 export * from './last';
 export * from './map';
+export * from './omit';
 export * from './reduce';
 export * from './reduceRight';
 export * from './reverse';
