@@ -8,6 +8,7 @@ export * from './head';
 export * from './last';
 export * from './map';
 export * from './omit';
+export * from './pick';
 export * from './reduce';
 export * from './reduceRight';
 export * from './reverse';
